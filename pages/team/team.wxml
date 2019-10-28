@@ -1,0 +1,5 @@
+<!-- 引入lian.wxml中定义的模板 -->
+<!-- 引入时 一定要注意路径问题 -->
+<!-- import不会全局查找 , 而是需要相对路径 如下 -->
+<import src="../lian-hy/lian.wxml" />
+<template is="starsTemplate" data="{{test:'forbar'}}" />

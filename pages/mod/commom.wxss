@@ -1,0 +1,9 @@
+.box {
+  /* 
+  其他样式
+  */
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx auto;
+  background-color: lightpink;
+}

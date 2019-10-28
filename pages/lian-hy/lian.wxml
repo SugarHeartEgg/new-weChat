@@ -1,0 +1,46 @@
+<!-- 引用 -->
+<template name="starsTemplate">
+  <view>
+    <text>{{test}}</text>
+  </view>
+</template>
+<!-- @import 引入式 -->
+<view class="box">我是引入式</view>
+<!-- 内联样式 -->
+<view style="color: red; font-size: 48rpx; text-align: center; margin-bottom: 20rpx;">我是内联式</view>
+<!-- 可动态变化的内联样式 -->
+<view style="color:{{elemColor}}; font-size: {{elemFont}}; text-align: center; margin-bottom:{{bottomSize}}">
+  我是动态变化的内联样式
+</view>
+<!-- 模块化引入 -->
+<view style="font-size: 48rpx; text-align: center; margin-bottom: 20rpx;">模块化:{{value}}</view>
+<!-- 实验数据 -->
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<view>我是数据</view>
+<button bindtap="toTeam">去team页</button>
