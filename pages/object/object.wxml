@@ -1,0 +1,28 @@
+<!-- <view class="outer" id="box" catchtap="handleTap">
+  <view id="inner">点我</view>
+</view>
+<view id="outer" bind:touchstart="handleTap1" capture-catch:touchstart="handleTap2">
+  outer view
+  <view id="inner" bind:touchstart="handleTap3" capture-bind:touchstart="handleTap4">
+    inner view
+  </view>
+</view>
+<view class="box">
+  <view class="item1"></view>
+  <view class="item2"></view>
+  <view class="item3"></view>
+</view> -->
+<!-- hover-class="hover"属性可设置任何想触发的样式颜色 -->
+<!-- <button hover-class="hover">点击button</button>
+<view hover-class="hover">点击view</view> -->
+<!-- 设置button的loading属性 -->
+<button loading="{{loading}}" bindtap="tab">点击button出现loading</button>
+<!-- 规范  成功提示可以用提示框 -->
+<button bindtap="tabs">点击显示成功</button>
+<!-- 错误提示 最好使用 对话框  可以明确的告诉用户 错的地方 -->
+<button bindtap="tabError">点击显示对话框</button>
+<!-- wx.request -->
+<!-- get请求 -->
+<button bindtap="getData">getData</button>
+<!-- post请求 -->
+<button bindtap="postData">postData</button>

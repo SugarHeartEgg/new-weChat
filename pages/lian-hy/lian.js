@@ -17,11 +17,15 @@ Page({
     // var index = e.currentTarget.dataset.index
     // 将对象转为string
     // var queryBean = JSON.stringify(that.data.queryList[index])
-    wx.navigateTo({
-      // 然后在给到指定的参数
-      // url: '../team/team?id=queryBean'
-      url: '../team/team?id=1&other=abc'
-    })
+    // wx.navigateTo({
+    //   // 然后在给到指定的参数
+    //   // url: '../team/team?id=queryBean'
+    //   url: '../team/team?id=1&other=abc'
+
+    // })
+
+    // 这种跳转 tabBar的 需要调用switchTab
+    wx.switchTab({ url: '../team/team' })
   },
   onLoad: function (option) {
     // 初次加载触发 , 在没有销毁前只会触发一次
@@ -52,5 +56,13 @@ Page({
     console.log("我是上拉触底");
   },
   onPageScroll: function () {
+    console.log("我是页面滚动监听");
+  },
+  onShareAppMessage: function () {
+    console.log("我是用户转发处理事件");
+    return {
+      // 使用转发功能 , 可自定义字段地址
+      title: "连公子"
+    }
   }
 });

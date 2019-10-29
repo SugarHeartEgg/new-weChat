@@ -1,10 +1,26 @@
 {
   "pages": [
+    "pages/object/object",
     "pages/lian-hy/lian",
     "pages/team/team",
     "pages/index/index",
     "pages/logs/logs"
   ],
+  "tabBar": {
+    "list": [
+      {
+        "text": "分类",
+        "pagePath": "pages/lian-hy/lian"
+      },
+      {
+        "text": "个人",
+        "pagePath": "pages/team/team"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 3000
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#f7f7f7",
