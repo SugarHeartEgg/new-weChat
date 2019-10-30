@@ -26,3 +26,21 @@
 <button bindtap="getData">getData</button>
 <!-- post请求 -->
 <button bindtap="postData">postData</button>
+<!-- 调器二维码 -->
+<button bindtap="codescan">点我调起二维码</button>
+<!-- 调取当前网络状态 -->
+<button bindtap="getNetwork">点我调取当前网络状态</button>
+<!-- composed Tree -->
+<view>
+  <input-with-label>
+    <label>TEXT</label>
+    <input />
+  </input-with-label>
+</view>
+<!-- 微信客户端原生组件 -->
+<map latitude="39.92" longtitude="116.46"></map>
+<video></video>
+<canvas></canvas>
+<picker>点我</picker>
+<cover-view>shenm</cover-view>
+<view bindtap="getCodeNum">基础库版本号:{{num}}</view>

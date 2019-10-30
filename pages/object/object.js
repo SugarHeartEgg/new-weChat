@@ -5,7 +5,31 @@ Page({
    * 页面的初始数据
    */
   data: {
-    loading: false
+    loading: false,
+    num: ''
+  },
+  getCodeNum() {
+    let num = wx.getSystemInfoSync();
+    console.log(num);
+    this.setData({
+      num: num.SDKVersion
+    })
+  },
+  codescan: function () {
+    wx.scanCode({
+      success: function (res) {
+        console.log(res);
+
+      }
+    })
+  },
+  getNetwork: function () {
+    wx.getNetworkType({
+      success: function (res) {
+        console.log(res);
+
+      }
+    })
   },
   tab: function () {
     this.setData({
@@ -117,5 +141,31 @@ Page({
 
     //   }
     // })
+
+    // 写本地数据
+    // 异步 setStorage
+    // 同步 setStorageSync
+    wx.setStorage({
+      key: 'key1',
+      data: 'value1',
+      success: function (res) {
+        console.log('写入value1成功');
+      }, fail: function () {
+        console.log('写入value1发生错误');
+      }
+    })
+
+    // 读本地数据缓存
+    // 异步 getStorage
+    // 同步 getStorageSync
+    wx.getStorage({
+      key: 'key1',
+      success: function (res) {
+        console.log(res);
+        var value1 = res.data
+      }, fail: function () {
+        console.log('读取key1发生错误');
+      }
+    })
   }
 })
